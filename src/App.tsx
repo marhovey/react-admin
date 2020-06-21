@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import zhCN from 'antd/es/locale-provider/zh_CN';
+import { HashRouter } from 'react-router-dom';
+import { MyRouter } from './router';
+import { ConfigProvider, message, notification } from 'antd';
+import storeConfig from './store';
+import moment  from 'moment';
+import 'moment/locale/zh-cn';
+import 'antd/dist/antd.css';
+import './App.css'
+moment.locale('zh-cn');
 
+const store = storeConfig();
+
+message.config({
+  duration: 2,
+  maxCount: 2
+});
+notification.config({
+  placement: 'topRight',
+  bottom: 50,
+  duration: 2,
+});
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <ConfigProvider locale={zhCN}>
+        <HashRouter>
+          <MyRouter />
+        </HashRouter>
+      </ConfigProvider>
+    </Provider>
   );
 }
 

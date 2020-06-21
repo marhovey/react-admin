@@ -1,0 +1,37 @@
+.login{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  .login-box{
+    width: 368px;
+    margin: 0 auto;
+    padding: 32px 0;
+    .login-title{
+      height: 33px;
+      font-size: 33px;
+      font-weight: 600;
+      color: rgba(0,0,0,.85);
+      line-height: 33px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .login-tooltip{
+      height: 22px;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(0,0,0,.45);
+      line-height: 22px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .password-tip{
+      height: 22px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #ff5c00;
+      line-height: 22px;
+      margin-bottom: 24px;
+    }
+  }
+}
