@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA,QACE,qBAAyB,CACzB,YAAa,CAFf,kCAII,cAAe,CAJnB,iCAOI,eAAgB","file":"9.94cab153.chunk.css","sourcesContent":[".tables{\n  background-color: #ffffff;\n  padding: 16px;\n  .ant-btn-link:first-child{\n    padding-left: 0;\n  }\n  .ant-btn-link:last-child{\n    padding-right: 0;\n  }\n}"]}
