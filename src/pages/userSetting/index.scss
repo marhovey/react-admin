@@ -1,0 +1,13 @@
+.user-setting{
+  background-color: #ffffff;
+  padding: 24px;
+  .basic{
+    .avatar-uploader{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    // text-align: center;
+  }
+}
