@@ -1,7 +1,8 @@
 .index{
   display: flex;
+  background-color: #e1e4e8;
   .left-nav{
-    height: 100vh;
+    min-height: 100vh;
     flex: 0 0 256px;
     background-color: #001529;
     overflow-y: auto;
@@ -17,6 +18,9 @@
       background: #fff;
       box-shadow: 0 1px 4px rgba(0,21,41,.08);
       justify-content: flex-end;
+    }
+    .content{
+      margin: 16px;
     }
   }
 }
