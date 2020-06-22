@@ -41,7 +41,7 @@ export const routeConfig: Array<RouteConfigProps> = [
         name: '数据中心',
       },
       {
-        path: '/index/tables',
+        path: '/index/table',
         exact: false,
         component: Tables,
         id: 2,

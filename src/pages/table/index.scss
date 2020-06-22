@@ -1,0 +1,10 @@
+.tables{
+  background-color: #ffffff;
+  padding: 16px;
+  .ant-btn-link:first-child{
+    padding-left: 0;
+  }
+  .ant-btn-link:last-child{
+    padding-right: 0;
+  }
+}
